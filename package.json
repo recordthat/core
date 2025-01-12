@@ -13,9 +13,9 @@
     "engine-validate": "npx ls-engines"
   },
   "dependencies": {
-    "@fastify/cors": "^8.5.0",
-    "@fastify/static": "^6.12.0",
-    "fastify": "^4.29.0"
+    "@fastify/cors": "^7.0.0",
+    "@fastify/static": "^5.0.2",
+    "fastify": "^3.29.5"
   },
   "engines": {
     "node": ">= 14.7.0"
