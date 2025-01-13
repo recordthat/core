@@ -5,7 +5,7 @@ export default {
     "@semantic-release/release-notes-generator", // Generates release notes
     "@semantic-release/changelog", // Updates the CHANGELOG.md file
     "@semantic-release/github", // Publishes the release to GitHub
-    "@semantic-release/npm", // Publishes the release to npm
+    "@semantic-release/npm", // Publishes the package to npm
     [
       "@semantic-release/git",
       {
