@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/recordthat/recordthat/compare/v1.0.1...v1.0.2) (2025-01-13)
+
+
+### Bug Fixes
+
+* add publishConfig to package.json for public access ([7a31d14](https://github.com/recordthat/recordthat/commit/7a31d14529cd9d88f7709f9c9373d45c1dfd8ac0))
+
 ## [1.0.1](https://github.com/recordthat/recordthat/compare/v1.0.0...v1.0.1) (2025-01-13)
 
 
