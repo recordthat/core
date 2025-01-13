@@ -7,11 +7,14 @@ on:
 
 # Allow this job to clone the repo
 permissions:
-  contents: write
-  id-token: write
+  contents: write # to be able to publish a GitHub release
+  issues: write # to be able to comment on released issues
+  pull-requests: write # to be able to comment on released pull requests
+  id-token: write # to enable use of OIDC for npm provenance
 
 jobs:
   release:
+    environment: production
     runs-on: ubuntu-latest
 
     steps:
@@ -30,4 +33,5 @@ jobs:
       - name: Run semantic release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
         run: npx semantic-release
