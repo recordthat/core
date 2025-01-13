@@ -1,13 +1,15 @@
 #!/usr/bin/env node
 
 import { startServer } from "./server";
+const { Command } = require("commander");
+const program = new Command();
 
-const args = process.argv.slice(2);
-const portArgIndex = args.indexOf("--port");
+program
+  .command("init")
+  .description("Initialize the RecordThat server and serve the UI")
+  .action(() => {
+    console.log("RecordThat init script running...");
+    startServer(4000);
+  });
 
-const port =
-  portArgIndex !== -1 && args[portArgIndex + 1]
-    ? parseInt(args[portArgIndex + 1], 10)
-    : 4000;
-
-startServer(port);
+program.parse(process.argv);
