@@ -1,5 +1,5 @@
 {
-  "name": "recordthat",
+  "name": "@recordthat/recordthat",
   "version": "0.0.1",
   "bin": {
     "recordthat": "./bin/init.js"
